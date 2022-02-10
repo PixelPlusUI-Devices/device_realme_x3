@@ -102,6 +102,10 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_SOURCE := kernel/realme/x3
 TARGET_KERNEL_CONFIG := vendor/x3-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-15.0/bin
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-15.0
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
+TARGET_KERNEL_CLANG_VERSION := 15.0
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
