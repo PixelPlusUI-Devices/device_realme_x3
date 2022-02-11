@@ -74,10 +74,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.device.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.device.rc \
     $(LOCAL_PATH)/rootdir/etc/init.safailnet.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.safailnet.rc
 
-# Kernel
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/kernel:kernel
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
